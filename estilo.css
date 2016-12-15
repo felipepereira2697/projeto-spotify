@@ -1,0 +1,174 @@
+
+
+/*ocupar 100% do espaço tanto o body quanto o html*/
+html,body, .capa{
+	height: 100%;
+}
+body{
+	
+	background: url('imagens/capa.png') ,
+	url('imagens/ruido.png') ,
+	linear-gradient(50deg,#ff4169,#7c26f8);
+	/*pro bg nao ficar repetindo de forma aleatoria*/
+	background-attachment: fixed;
+	font-family:Helvetica,Arial,sans-serif;
+	/*remove a barra de acordo com o eixo y, no caso a barra deitada(horizontal) MUITO IMPORTANTE*/
+	overflow-x:hidden;
+
+}
+/*Bara de navegação*/
+.img-logo{
+	height: 40px; /*altura utilizada no site do spotify*/
+	width: 132px;/*largura utilizada no site do spotify*/
+	display: block;
+	background:url('imagens/spotify.svg') no-repeat;
+	background-size: contain;/*contain define que a img de fundo vai ter o mesmo tamanho deifnido na classe*/
+	color: transparent; /*o texto, span escrito spotify permance aí porém colocamos transparente, é importante deixá-lo devido leitores de texto*/
+
+}
+nav.navbar-transparente{
+	padding: 15px 0px;
+	background: rgba(0,0,0,0.6);
+	border:none;
+}
+/*sobreescrever o padding e algumas formatações da classe navb-brand*/
+.navbar-brand{
+	
+	padding: 5px 15px;
+}
+.divisor{
+	width:1px;
+	height: 16px;
+	background: white;
+	margin:15px 10px;
+}
+
+/*formatando outra classe do bootstrap, selecionando o link da mesma forma que o bootstrap faz*/
+/*sinal de >é um seletor filho, seleciona o filho imediato do item, no caso, li é pai e a é filho imediato*/
+/*Selecione o primeiro link de li*/
+/*formataremos aqui também os links do rodapé*/
+/*todos os links que estiverem dentro de .nav e pertencentes a footer serão formatados*/
+.navbar-inverse .navbar-nav>li>a, footer .nav a{
+	color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover{
+	color: #9bf0e1;
+	/*resolver o problema de hover com fundo branco no rodapé*/
+	background:none;
+}
+
+/*Imagem da capa montando a capa ===============================================*/
+
+.capa{
+	/*jeito para alinhar verticalmente*/
+	display: table;
+	width: 100%;
+}
+
+.texto-capa{
+	text-align: center;
+	color: white;
+	/*jeito para alinhar verticalmente*/
+	display: table-cell;
+	vertical-align: middle;
+}
+/*Botões =============*/
+.btn-custom{
+	color: white;
+	border-radius: 500px;
+	-webkit-border-radius:500px;
+	-moz-border-radius:500px;
+	padding: 10px 35px;
+	text-transform: uppercase;
+	margin: 0px 15px;
+	/*a passagem do hover fica mais sensivel nao fica tão rapido*/
+	transition:background 0.4s, color 0.4s;
+}
+.btn-roxo{
+	background:#7c25f8;
+}
+
+.btn-roxo:hover{
+	background:#6207e3;
+	color:white;
+}
+.btn-branco{
+	border: 2px solid white;
+}
+
+.btn-branco:hover{
+	background-color: white;
+	color:black;
+}
+/*Conteudo servicos ================================*/
+#servicos{
+	background:white;
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+
+.albuns{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*seção de recursos*/
+#recursos{
+	
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color:white;
+}
+
+/*rodapé*/
+footer{
+	background:#000;
+	padding: 50px 0px 20px 0px;
+	position: relative;
+}
+
+/*rotacionando as imagens dos iphones*/
+.rotacionar{
+	-ms-transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	/*mexer no padding esquerdo, arrumando o problema da imagem ficar em cima do texto*/
+	padding-left: 80px;
+}
+
+/*tipografia =============================*/
+h1{
+	font-size: 100px;
+	font-weight: 900;
+	letter-spacing: -0.05em;
+	margin-bottom: 50px;
+}
+
+h2{
+	font-size: 50px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+
+h3{
+	font-size: 35px;
+	font-weight: 700;
+	letter-spacing: -0.04em;
+}
+#rodape h4{
+	color:#919496;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.item-rede-social{
+	float:right;
+}
+/*só os h2 e h3 receberam essa letra roxa e só os que estão dentro da section SERVIÇOS, sim tem que repetir ali*/
+#servicos h2,#servicos h3{
+	color:#7c25f8;
+}
+
+#recursos h3{
+	color:#9bf0e1;
+}
