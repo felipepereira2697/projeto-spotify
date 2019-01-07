@@ -1,5 +1,6 @@
-# projeto-spotify
-Página inicial do Spotify, usando bootstrap.
-Essa página foi construída com o intuito de aprender a utilizar o framework Bootstrap
-esse projeto foi disponibilizado no curso Completo do Desenvolvedor Web da plataforma Udemy, os instrutores
-Jorge Sant' Ana e Jamilton Damasceno foram os responsáveis por auxiliar na construção desse projeto.
+# spotify-project
+Spotify home page, using Bootstrap.
+This page was built with to purpose to learn and understand how Bootstrap works
+In fact, this project is from an Udemy course called "Completo do Desenvolvedor Web" by Jorge Sant' Ana e Jamilton Damasceno
+P.S: The course is in brazilian portuguese.
+ 
